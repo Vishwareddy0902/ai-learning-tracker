@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090c13">
+  <meta name="description" content="Master AI engineering and deep learning, one concept at a time.">
+  <meta property="og:title" content="NeuralPath — AI Learning Tracker">
+  <meta property="og:description" content="Master AI engineering and deep learning, one concept at a time.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NeuralPath — AI Learning Tracker">
+  <meta name="twitter:description" content="Master AI engineering and deep learning, one concept at a time.">
+  <title>NeuralPath — AI Learning Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-view="overview" aria-label="NeuralPath overview"><span class="brand-mark">N</span><span class="brand-name">NeuralPath</span></a>
+      <nav class="nav-list" aria-label="Primary navigation">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">◈</span><span>Overview</span></button>
+        <div id="roadmapNav" class="roadmap-nav"></div>
+        <button class="nav-item" data-view="focus"><span class="nav-icon">✦</span><span>Focus session</span></button>
+        <div class="roadmap-nav-actions"><button class="nav-item add-roadmap" id="addRoadmapButton"><span class="nav-icon">＋</span><span>Add roadmap</span></button><button class="nav-item" id="manageRoadmapsButton"><span class="nav-icon">⚙</span><span>Manage roadmaps</span></button></div>
+      </nav>
+      <div class="sidebar-week" id="sidebarWeek"></div>
+      <div class="sidebar-footer">
+        <button class="nav-item" id="dataButton"><span class="nav-icon">⇅</span><span>Backup & restore</span></button>
+        <div class="profile"><span class="avatar" id="profileAvatar">VR</span><div><strong id="profileName">Vishwa</strong><small id="profileDesignation">SDE 2</small></div><button class="profile-edit" id="editProfile" aria-label="Edit profile">✎</button></div>
+      </div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+        <div class="page-heading"><span class="eyebrow" id="pageEyebrow">LEARNING COMMAND CENTER</span><h1 id="pageTitle">Build momentum, one concept at a time.</h1></div>
+        <div class="top-actions">
+          <button class="icon-btn" id="searchButton" aria-label="Search topics">⌕</button>
+          <button class="icon-btn" id="themeButton" aria-label="Toggle theme">☼</button>
+          <button class="primary-btn" data-view="focus">Start focus <span>→</span></button>
+        </div>
+      </header>
+      <div class="search-panel hidden" id="searchPanel"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search every topic and phase…" autocomplete="off"><kbd>ESC</kbd></div>
+      <div id="app" aria-live="polite"></div>
+    </main>
+  </div>
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button><div id="modalContent"></div>
+    </section>
+  </div>
+  <input type="file" id="importInput" accept="application/json" hidden>
+  <input type="file" id="roadmapInput" accept="application/json" hidden>
+  <div class="toast hidden" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

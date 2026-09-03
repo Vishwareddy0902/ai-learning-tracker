@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "roadmaps": [
+    {
+      "id": "prompt-engineering",
+      "title": "Prompt Engineering",
+      "label": "PROMPT ENGINEERING ROADMAP",
+      "description": "Learn how to design reliable prompts for AI applications.",
+      "phases": [
+        {
+          "id": "prompt-foundations",
+          "title": "Prompt Foundations",
+          "description": "Understand the building blocks of effective prompts.",
+          "topics": [
+            {
+              "id": "prompt-structure",
+              "title": "Prompt Structure",
+              "description": "Write clear instructions with context and constraints.",
+              "subtopics": [
+                {
+                  "id": "instructions",
+                  "title": "Clear Instructions"
+                },
+                {
+                  "id": "context",
+                  "title": "Relevant Context"
+                },
+                {
+                  "id": "constraints",
+                  "title": "Output Constraints"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
